@@ -75,10 +75,6 @@ h6 {
   overflow-y: auto;
 }
 
-#header {
-  /* overflow: hidden; */
-}
-
 #header .profile img {
   margin: 15px auto;
   display: block;
@@ -377,13 +373,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
-
-/*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 .skills .progress {
@@ -481,6 +470,12 @@ section {
   border: 2px solid #1f5297;
 }
 
+/*--------------------------------------------------------------
+# Songs
+--------------------------------------------------------------*/
+.songs {
+  padding-bottom: 30px;
+}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -641,13 +636,6 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
   background: #149ddd;
   color: #fff;
 }
