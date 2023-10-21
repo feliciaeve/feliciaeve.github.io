@@ -554,7 +554,7 @@ section {
 
 .testimonials .swiper-pagination {
   margin-top: 20px;
-  position: absolute;
+  position:relative;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
