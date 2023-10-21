@@ -36,7 +36,7 @@
       <div class="d-flex flex-column">
         <div class="profile">
           <img src="assets/img/profil.jpg" alt="" class="img-fluid rounded-circle" />
-          <h1 class="text-light"><a href="index.html">Felicia Evelina</a></h1>
+          <h1 class="text-light"><a href="index.html">Felicia Evelina S</a></h1>
           <div class="social-links mt-3 text-center">
             <a href="https://instagram.com/feliciaev__/" class="instagram"><i class="bx bxl-instagram"></i></a>
             <a href="https://www.linkedin.com/in/feliciaevelinas/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -280,27 +280,39 @@
             <h2>Contact Me</h2>
           </div>
             <div class="d-flex align-items-stretch">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" class="form-control" id="name" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="name">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" required />
+              <form class="row g-3 needs-validation" novalidate>
+                <div>
+                  <label for="validationCustom01" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Enter your name" required>
+                  <div class="valid-feedback">
+                    Name is valid!
                   </div>
                 </div>
-                <div class="form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" rows="10" required></textarea>
+                <div>
+                  <label for="validationCustom02" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Enter your email" required>
+                  <div class="valid-feedback">
+                    Email is valid!
+                  </div>
                 </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label">Message</label>
+                  <textarea type="text" class="form-control" id="validationTextarea" placeholder="Enter your message here" required></textarea>
                 </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Send Message</button>
+                </div>
               </form>
             </div>
           </div>
