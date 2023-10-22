@@ -227,10 +227,8 @@
       return false;
     }
 
-    alert("Message sent successfully!");
-    return true;
-
-    submitButton.disabled = false;
+    window.location.href = "https://www.google.com";
+    return false;
   }
 
   /**
