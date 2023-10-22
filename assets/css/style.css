@@ -481,7 +481,7 @@ section {
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
-  min-height: 320px;
+  min-height: 350px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -547,7 +547,7 @@ section {
 
 .testimonials .swiper-pagination {
   margin-top: 20px;
-  position: absolute;
+  position: relative;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {

@@ -194,6 +194,46 @@
   });
 
   /**
+   * Form Validation
+   */
+  function validateForm() {
+    let name = document.getElementById("validationCustom01").value;
+    let email = document.getElementById("validationCustom02").value;
+    let message = document.getElementById("validationTextarea").value;
+    let submitButton = document.getElementById("submitButton");
+
+    if (name === "") {
+      alert("Name must be filled out!");
+      submitButton.disabled = true;
+      return false;
+    }
+
+    if (email === "") {
+      alert("Email must be filled out!");
+      submitButton.disabled = true;
+      return false;
+    }
+
+    if (message === "") {
+      alert("Message must be filled out!");
+      submitButton.disabled = true;
+      return false;
+    }
+
+    var atps = email.indexOf("@");
+    var dots = email.lastIndexOf(".");
+    if (atps < 1 || dots < atps + 2 || dots + 2 >= email.length) {
+      alert("Invalid email address");
+      return false;
+    }
+
+    alert("Message sent successfully!");
+    return true;
+
+    submitButton.disabled = false;
+  }
+
+  /**
    * Animation on scroll
    */
   window.addEventListener("load", () => {
